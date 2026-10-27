@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="https://newrelic.com/docs/java/xsd/v1.0"
+           name="easytravel-training"
+           version="1.0">
+  <instrumentation>
+    <pointcut transactionStartPoint="false">
+      <className>
+        com/dynatrace/easytravel/frontend/RunFrontendTomcat
+      </className>
+      <method>
+        <name>main</name>
+      </method>
+    </pointcut>
+  </instrumentation>
+</extension>
